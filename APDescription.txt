@@ -1,0 +1,1 @@
+( ap-description  :name "AISummation" :ap-services (set ( ap-service  :name fipa.mts.mtp.http.std :type fipa.mts.mtp.http.std :addresses (sequence http://yousofkortam.mshome.net:7778/acc))))
