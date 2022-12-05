@@ -8,8 +8,12 @@ public class doDivision extends Behaviour {
     public void action() {
         int fNumber = checkOperation.firstNumber;
         int sNumber = checkOperation.secondNumber;
-        int result = fNumber / sNumber;
-        System.out.println("The division is : " + result);
+        try {
+            int result = fNumber / sNumber;
+            System.out.println("The division is : " + result);
+        }catch (ArithmeticException arithmeticException) {
+            System.out.println("Error : " + arithmeticException.getMessage());
+        }
     }
 
     @Override
